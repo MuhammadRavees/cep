@@ -1,0 +1,57 @@
+<h2>Probabilities are {{prob}} </h2>
+<h2>index are {{tp}} </h2>
+<h2>index are {{im}} </h2>
+
+{% comment %} <h1> {% endcomment %}
+   {% comment %} The result is {{prob}} {% endcomment %}
+    {% comment %} {% for i in tp %}
+	<div class="row">
+		{{prob[i]}}
+	</div> {% endcomment %}
+    {% comment %} {% endfor %}  {% endcomment %}
+
+
+    {% for x in tp %}
+    <div>
+        {{x}}
+    </div>          
+    {% endfor %}
+    {% comment %} <div>
+        <h3>
+            List of books:
+        </h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Number of copies</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for x in range %}
+                    <tr>
+                        <td>{{id[x]}}</td>
+                        <td>{{bookName[x]}}</td>
+                        <td>{{author[x]}}</td>
+                        <td>{{copies[x]}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>  {% endcomment %}
+    {% comment %} {% for f,m in context%}
+        {{f}}{{m}}
+    {% endfor %} {% endcomment %}
+
+    {% comment %} <div class="row">
+    {% for i in '012345'|make_list  %}
+    
+         <h1>"Patient has " "{}".format({{class}}[{{tp}}[i]])+ " with prob " " ({:.3})".format({{prob}}[0][{{top_3}}[i]])) </h1>
+         {% endfor %}
+        </div> {% endcomment %}
+  
+
+{% comment %} </h1> {% endcomment %}
+<h2>Classes are {{class}} </h2>
